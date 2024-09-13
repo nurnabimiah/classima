@@ -1,5 +1,8 @@
+import 'package:classimia/controller/splash_controller/splash_controller.dart';
 import 'package:classimia/utils/app_constants.dart';
 import 'package:dio/dio.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:get_it/get_it.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'data/datasource/remote/dio/dio_client.dart';
@@ -19,7 +22,7 @@ Future<void> init() async {
   /// Controller
   //    Get.lazyPut(() => SplashController(dioClient: sl()), fenix: true);
   //    Get.lazyPut(() => BottomNavigationBarController(), fenix: true);
-  //    Get.lazyPut(() => HomeController(), fenix: true);
+     Get.lazyPut(() => SplashController(), fenix: true);
 
 
   /// External

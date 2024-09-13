@@ -1,14 +1,17 @@
 
 
+import 'package:classimia/controller/splash_controller/splash_controller.dart';
 import 'package:classimia/utils/app_colors.dart';
 import 'package:classimia/utils/app_text/app_text.dart';
 import 'package:classimia/utils/images/app_images.dart';
 import 'package:classimia/utils/style/app_style.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SplashScreen extends StatelessWidget {
   static const String routeName = '/splash_route';
-  const SplashScreen({super.key});
+  SplashScreen({super.key});
+  final splashController = Get.find<SplashController>();
 
   @override
   Widget build(BuildContext context) {

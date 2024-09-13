@@ -20,7 +20,7 @@ class GlobalNavigationService {
     static Route<dynamic> generateRoutes(RouteSettings settings) {
     switch (settings.name) {
     case '/dashboard':
-    return MaterialPageRoute(builder: (context) => const SplashScreen());
+    return MaterialPageRoute(builder: (context) => SplashScreen());
 
     default:
       return MaterialPageRoute(
