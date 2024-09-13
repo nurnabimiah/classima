@@ -1,3 +1,5 @@
+import 'package:classimia/controller/auth_controller/sign_in_controller.dart';
+import 'package:classimia/controller/auth_controller/sign_up_controller.dart';
 import 'package:classimia/controller/splash_controller/splash_controller.dart';
 import 'package:classimia/utils/app_constants.dart';
 import 'package:dio/dio.dart';
@@ -21,8 +23,9 @@ Future<void> init() async {
 
   /// Controller
   //    Get.lazyPut(() => SplashController(dioClient: sl()), fenix: true);
-  //    Get.lazyPut(() => BottomNavigationBarController(), fenix: true);
      Get.lazyPut(() => SplashController(), fenix: true);
+     Get.lazyPut(() => SignInController(), fenix: true);
+     Get.lazyPut(() => SignUpController(), fenix: true);
 
 
   /// External

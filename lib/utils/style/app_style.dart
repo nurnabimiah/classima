@@ -18,13 +18,13 @@ myStyleRobotoCustom({
 }
 
 /// For Extra Large Size
-myStyleInterExtraLarge({required BuildContext context, required Color color, FontWeight? fontWeight, double? fontSize}){
-  return GoogleFonts.inter(fontSize: fontSize ?? 18, color: color, fontWeight: fontWeight ?? FontWeight.w800);
+myStyleInterExtraLarge({required BuildContext context,Color? color, FontWeight? fontWeight, double? fontSize}){
+  return GoogleFonts.inter(fontSize: fontSize ?? 18, color: color ??AppColors.appWhiteColor, fontWeight: fontWeight ?? FontWeight.w800);
 }
 
 /// For Large Size
-myStyleInterLarge({required BuildContext context, required Color color, FontWeight? fontWeight, double? fontSize}){
-  return GoogleFonts.inter(fontSize: fontSize ?? 16, color: color, fontWeight: fontWeight ?? FontWeight.w600);
+myStyleInterLarge({required BuildContext context,  Color ? color, FontWeight? fontWeight, double? fontSize}){
+  return GoogleFonts.inter(fontSize: fontSize ?? 16, color: color ?? AppColors.appWhiteColor, fontWeight: fontWeight ?? FontWeight.w600);
 }
 
 /// For Medium Size
