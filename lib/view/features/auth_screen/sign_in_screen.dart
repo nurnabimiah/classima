@@ -3,6 +3,7 @@
 import 'package:classimia/controller/auth_controller/sign_in_controller.dart';
 import 'package:classimia/utils/app_colors.dart';
 import 'package:classimia/utils/style/app_style.dart';
+import 'package:classimia/view/features/auth_screen/reset_password_screen.dart';
 import 'package:classimia/view/features/auth_screen/sign_up_screen.dart';
 import 'package:classimia/view/widgets/common_widget/custom_button.dart';
 import 'package:classimia/view/widgets/common_widget/custom_text_form_filed.dart';
@@ -60,7 +61,9 @@ class SignInScreen extends StatelessWidget {
                   Align(
                       alignment: Alignment.centerRight,
                       child: GestureDetector(
-                          onTap: (){},
+                          onTap: (){
+                            Get.toNamed(ResetPasswordScreen.routeName);
+                          },
                           child: Text('Forget Password ?',style: myStyleInterSmall(context: context,color: AppColors.appBlackColor),))),
                   const SizedBox(height: 20),
                   
