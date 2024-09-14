@@ -50,7 +50,7 @@ class ResetPasswordScreen extends StatelessWidget {
                 Text('Retype Password', style: myStyleInterMedium(context: context, color: AppColors.appBlackColor)),
                 const SizedBox(height: 10),
                 Obx(()=> CustomTextFormFiled(
-                    controller: _passwordController,
+                    controller: _resetPasswordController,
                     hintText: 'Password',
                     obscureText: resetController.isObscure.value,
                     prefixIcon: const Icon(Icons.lock, color: AppColors.appPrimaryColor),
@@ -63,6 +63,8 @@ class ResetPasswordScreen extends StatelessWidget {
 
                 // Button
                 CustomButtonWidget(onTap: (){}, title: Text('Continue',style: myStyleInterLarge(context: context),)),
+
+
 
               ],
             ),

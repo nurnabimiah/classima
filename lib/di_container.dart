@@ -8,6 +8,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get_it/get_it.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'controller/landing_screen_controller/landing_screen_controller.dart';
 import 'data/datasource/remote/dio/dio_client.dart';
 import 'data/datasource/remote/dio/logging_interceptor.dart';
 
@@ -28,6 +29,7 @@ Future<void> init() async {
      Get.lazyPut(() => SignInController(), fenix: true);
      Get.lazyPut(() => SignUpController(), fenix: true);
      Get.lazyPut(() => ResetPasswordController(), fenix: true);
+     Get.lazyPut(() => BottomNavigationBarController(), fenix: true);
 
 
   /// External

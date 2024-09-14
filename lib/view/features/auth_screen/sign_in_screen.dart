@@ -4,6 +4,7 @@ import 'package:classimia/utils/app_colors.dart';
 import 'package:classimia/utils/style/app_style.dart';
 import 'package:classimia/view/features/auth_screen/forgot_password_screen.dart';
 import 'package:classimia/view/features/auth_screen/sign_up_screen.dart';
+import 'package:classimia/view/features/landing_screen/landing_screen.dart';
 import 'package:classimia/view/widgets/common_widget/custom_button.dart';
 import 'package:classimia/view/widgets/common_widget/custom_text_form_filed.dart';
 import 'package:classimia/view/widgets/screen_widget/auth_widget/sign_in_header_widget.dart';
@@ -68,7 +69,11 @@ class SignInScreen extends StatelessWidget {
                     const SizedBox(height: 20),
                     
                     // button
-                    CustomButtonWidget(onTap: (){}, title: Text('Sign In',style: myStyleInterLarge(context: context),)),
+                    CustomButtonWidget(
+                        onTap: (){
+                          Get.offNamedUntil(LandingScreen.routeName, (route) => false);
+                        },
+                        title: Text('Sign In',style: myStyleInterLarge(context: context),)),
                     const SizedBox(height: 20),
         
                     // Rich Text for "Create an account?"
