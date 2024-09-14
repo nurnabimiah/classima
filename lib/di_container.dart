@@ -1,3 +1,4 @@
+import 'package:classimia/controller/auth_controller/reset_password_controller.dart';
 import 'package:classimia/controller/auth_controller/sign_in_controller.dart';
 import 'package:classimia/controller/auth_controller/sign_up_controller.dart';
 import 'package:classimia/controller/splash_controller/splash_controller.dart';
@@ -26,6 +27,7 @@ Future<void> init() async {
      Get.lazyPut(() => SplashController(), fenix: true);
      Get.lazyPut(() => SignInController(), fenix: true);
      Get.lazyPut(() => SignUpController(), fenix: true);
+     Get.lazyPut(() => ResetPasswordController(), fenix: true);
 
 
   /// External
