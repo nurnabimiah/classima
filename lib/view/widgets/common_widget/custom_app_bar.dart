@@ -15,7 +15,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   });
 
   final String title;
-  final List<Widget>? actions; // Optional actions parameter
+  final List<Widget>? actions;
 
   @override
   Widget build(BuildContext context) {
@@ -37,10 +37,11 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           size: 20,
         ),
       ),
-      actions: actions, // Use the optional actions parameter
+      actions: actions,
     );
   }
 
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }
+
