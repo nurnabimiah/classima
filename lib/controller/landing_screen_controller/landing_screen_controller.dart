@@ -11,7 +11,6 @@ import 'package:classimia/view/features/landing_screen/landing_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-
 class BottomNavigationBarController extends GetxController implements GetxService{
   int _selectedIndex = 0;
   int get selectedIndex => _selectedIndex;
@@ -42,12 +41,12 @@ class BottomNavigationBarController extends GetxController implements GetxServic
 
 
         const BottomNavigationBarItem(
-          icon: ImageIcon( AssetImage(AppImages.home_icon),
+          icon: ImageIcon( AssetImage(AppImages.homeIcon),
             color: AppColors.appBlackColor,
             size: 20,
           ),
           activeIcon: ImageIcon(
-            AssetImage(AppImages.home_icon),
+            AssetImage(AppImages.homeIcon),
             color: AppColors.appPrimaryColor,
             size: 20,
           ),
@@ -57,12 +56,12 @@ class BottomNavigationBarController extends GetxController implements GetxServic
 
         const BottomNavigationBarItem(
           icon: ImageIcon(
-            AssetImage(AppImages.search_icon),
+            AssetImage(AppImages.searchIcon),
             color: AppColors.appBlackColor,
             size: 20,
           ),
           activeIcon: ImageIcon(
-            AssetImage(AppImages.search_icon),
+            AssetImage(AppImages.searchIcon),
             color: AppColors.appPrimaryColor,
             size: 20,
           ),
@@ -94,12 +93,12 @@ class BottomNavigationBarController extends GetxController implements GetxServic
 
         const BottomNavigationBarItem(
           icon: ImageIcon(
-            AssetImage(AppImages.chat_icon),
+            AssetImage(AppImages.chatIcon),
             color: AppColors.appBlackColor,
             size: 20,
           ),
           activeIcon: ImageIcon(
-            AssetImage(AppImages.chat_icon),
+            AssetImage(AppImages.chatIcon),
             color: AppColors.appPrimaryColor,
             size: 20,
           ),
@@ -108,12 +107,12 @@ class BottomNavigationBarController extends GetxController implements GetxServic
 
         const BottomNavigationBarItem(
           icon: ImageIcon(
-            AssetImage(AppImages.profile_icon),
+            AssetImage(AppImages.profileIcon),
             color: AppColors.appBlackColor,
             size: 20,
           ),
           activeIcon: ImageIcon(
-            AssetImage(AppImages.profile_icon),
+            AssetImage(AppImages.profileIcon),
             color: AppColors.appPrimaryColor,
             size: 20,
           ),
