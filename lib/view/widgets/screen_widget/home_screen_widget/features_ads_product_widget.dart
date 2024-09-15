@@ -56,10 +56,10 @@ final List<Product> products = [
   // Add more products here
 ];
 
-class ProductCard extends StatelessWidget {
+class ProductCardWidget extends StatelessWidget {
   final Product product;
 
-  const ProductCard({super.key, required this.product});
+  const ProductCardWidget({super.key, required this.product});
 
   @override
   Widget build(BuildContext context) {

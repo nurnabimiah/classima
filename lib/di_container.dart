@@ -1,3 +1,4 @@
+import 'package:classimia/controller/ads_details_controller/ads_details_controller.dart';
 import 'package:classimia/controller/auth_controller/reset_password_controller.dart';
 import 'package:classimia/controller/auth_controller/sign_in_controller.dart';
 import 'package:classimia/controller/auth_controller/sign_up_controller.dart';
@@ -30,6 +31,7 @@ Future<void> init() async {
      Get.lazyPut(() => SignUpController(), fenix: true);
      Get.lazyPut(() => ResetPasswordController(), fenix: true);
      Get.lazyPut(() => BottomNavigationBarController(), fenix: true);
+     Get.lazyPut(() => AdsDetailsController(), fenix: true);
 
 
   /// External

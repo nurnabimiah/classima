@@ -2,11 +2,12 @@
 import 'package:classimia/utils/app_colors.dart';
 import 'package:classimia/utils/images/app_images.dart';
 import 'package:classimia/utils/style/app_style.dart';
+import 'package:classimia/view/features/ads_details_screen/ads_details_screen.dart';
 import 'package:classimia/view/widgets/screen_widget/home_screen_widget/home_header_widget.dart';
 import 'package:classimia/view/widgets/screen_widget/home_screen_widget/popular_category_card.dart';
 import 'package:flutter/material.dart';
-
-import '../../widgets/screen_widget/home_screen_widget/features_ads_product.dart';
+import 'package:get/get.dart';
+import '../../widgets/screen_widget/home_screen_widget/features_ads_product_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -93,7 +94,6 @@ class HomeScreen extends StatelessWidget {
               child: Text('Popular Categories',style: myStyleInterLarge(context: context,color: AppColors.appBlackColor),),
             ),
             const SizedBox(height: 10,),
-
             Padding(
               padding:const EdgeInsets.symmetric(horizontal: 8.0),
               child: GridView.builder(
@@ -107,16 +107,14 @@ class HomeScreen extends StatelessWidget {
                 ),
                 itemCount: products.length,
                 itemBuilder: (context, index) {
-                  return ProductCard(product: products[index]);
+                  return GestureDetector(
+                      onTap: (){
+                        Get.toNamed(AdsDetailsScreen.routeName);
+                      },
+                      child: ProductCardWidget(product: products[index]));
                 },
               ),
             ),
-
-
-            
-        
-        
-        
           ],
         ),
       ),

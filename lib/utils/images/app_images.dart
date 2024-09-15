@@ -16,6 +16,7 @@ class AppImages {
 
   /// images
   static const String hotelImage= 'assets/images/hotel_picture.png';
+  static const String chatProfile= 'assets/images/sunny_apo.jpg';
 
 
 }

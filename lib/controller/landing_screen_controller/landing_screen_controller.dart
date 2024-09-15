@@ -145,7 +145,7 @@ class BottomNavigationBarController extends GetxController implements GetxServic
       return const AddScreen();
     }
     if (index == 3) {
-      return const ChatScreen();
+      return const MessageScreen();
     }
 
     if (index == 4) {

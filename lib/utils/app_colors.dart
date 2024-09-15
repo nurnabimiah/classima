@@ -8,5 +8,6 @@ class AppColors {
   static const Color appBrightBlackColor = Color(0xffB9B9B9);
 
 
+
 }
 
