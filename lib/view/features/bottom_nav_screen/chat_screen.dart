@@ -4,7 +4,6 @@ import 'package:classimia/utils/app_colors.dart';
 import 'package:classimia/utils/images/app_images.dart';
 import 'package:classimia/utils/style/app_style.dart';
 import 'package:classimia/view/widgets/common_widget/custom_app_bar.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MessageScreen extends StatelessWidget {
