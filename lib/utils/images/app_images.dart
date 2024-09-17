@@ -19,4 +19,5 @@ class AppImages {
   static const String chatProfile= 'assets/images/sunny_apo.jpg';
 
 
+
 }

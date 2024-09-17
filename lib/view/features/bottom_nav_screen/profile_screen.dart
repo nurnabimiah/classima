@@ -3,11 +3,14 @@
 import 'package:classimia/utils/app_colors.dart';
 import 'package:classimia/utils/images/app_images.dart';
 import 'package:classimia/utils/style/app_style.dart';
+import 'package:classimia/view/features/post_history_screen/post_history_screen.dart';
 import 'package:classimia/view/widgets/common_widget/custom_app_bar.dart';
 import 'package:classimia/view/widgets/screen_widget/profile_screen_widget/profile_screen_title_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class ProfileScreen extends StatelessWidget {
+  static const String routeName = '/profile_screen_route';
   const ProfileScreen({super.key});
 
   @override
@@ -47,7 +50,11 @@ class ProfileScreen extends StatelessWidget {
             ),
 
             // post history
-            ProfileScreenTitleWidget(title: 'Post History', onTap: (){}),
+            ProfileScreenTitleWidget(title: 'Post History',
+                onTap: (){
+                 Get.toNamed(PostHistoryScreen.routeName);
+                }
+            ),
             const SizedBox(height: 10,),
 
             // Favourite
