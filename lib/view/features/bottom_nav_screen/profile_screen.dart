@@ -3,6 +3,7 @@
 import 'package:classimia/utils/app_colors.dart';
 import 'package:classimia/utils/images/app_images.dart';
 import 'package:classimia/utils/style/app_style.dart';
+import 'package:classimia/view/features/auth_screen/change_password_screen.dart';
 import 'package:classimia/view/features/favourite_screen/favourite_ads_screen.dart';
 import 'package:classimia/view/features/post_history_screen/post_history_screen.dart';
 import 'package:classimia/view/widgets/common_widget/custom_app_bar.dart';
@@ -67,7 +68,9 @@ class ProfileScreen extends StatelessWidget {
             const SizedBox(height: 10,),
 
             // change password
-            ProfileScreenTitleWidget(title: 'Change Password', onTap: (){}),
+            ProfileScreenTitleWidget(title: 'Change Password', onTap: (){
+              Get.toNamed(ChangePasswordScreen.routeName);
+            }),
             const SizedBox(height: 10,),
 
             // Contact us

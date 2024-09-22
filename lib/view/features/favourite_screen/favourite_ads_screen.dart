@@ -1,5 +1,4 @@
 
-import 'package:classimia/utils/app_colors.dart';
 import 'package:classimia/view/widgets/common_widget/custom_app_bar.dart';
 import 'package:flutter/material.dart';
 
