@@ -7,9 +7,7 @@ import 'package:popover/popover.dart';
 class ProductHistoryCardWidget extends StatelessWidget {
   final Widget widget;
   const ProductHistoryCardWidget({super.key,required this.widget});
-
-
-
+  
   @override
   Widget build(BuildContext context) {
     return Card(

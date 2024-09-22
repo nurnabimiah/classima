@@ -5,6 +5,7 @@ import 'package:classimia/view/features/auth_screen/forgot_password_screen.dart'
 import 'package:classimia/view/features/auth_screen/reset_password_screen.dart';
 import 'package:classimia/view/features/auth_screen/sign_in_screen.dart';
 import 'package:classimia/view/features/auth_screen/sign_up_screen.dart';
+import 'package:classimia/view/features/favourite_screen/favourite_ads_screen.dart';
 import 'package:classimia/view/features/landing_screen/landing_screen.dart';
 import 'package:classimia/view/features/post_history_screen/post_history_screen.dart';
 import 'package:classimia/view/features/splash_screen/splash_screen.dart';
@@ -23,6 +24,7 @@ class AppRoutes {
     GetPage(name: LandingScreen.routeName, page: () => const LandingScreen()),
     GetPage(name: AdsDetailsScreen.routeName, page: () =>  AdsDetailsScreen()),
     GetPage(name: PostHistoryScreen.routeName, page: () =>  const PostHistoryScreen()),
+    GetPage(name: FavouriteAdsScreen.routeName, page: () =>  const FavouriteAdsScreen()),
 
   ];
 }
