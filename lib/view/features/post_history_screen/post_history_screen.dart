@@ -1,10 +1,8 @@
 
 
 import 'package:classimia/view/widgets/common_widget/custom_app_bar.dart';
-import 'package:classimia/view/widgets/screen_widget/post_history_screen/product_history_card_widget.dart';
 import 'package:flutter/material.dart';
-
-import '../../widgets/screen_widget/home_screen_widget/features_ads_product_widget.dart';
+import '../../widgets/screen_widget/post_history_screen_widget/product_history_card_widget.dart';
 
 class PostHistoryScreen extends StatelessWidget {
   static const String routeName = '/post_history_route';
@@ -13,7 +11,7 @@ class PostHistoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(title: 'Post History',),
+      appBar: const CustomAppBar(title: 'Post History'),
 
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -21,7 +19,23 @@ class PostHistoryScreen extends StatelessWidget {
             itemCount: 5,
             separatorBuilder: (BuildContext context, int index)=> const SizedBox(height: 5,),
             itemBuilder: (BuildContext context,index){
-              return const ProductHistoryCardWidget();
+              return ProductHistoryCardWidget(
+                widget: Column(
+                  children: [
+                    ListItems(
+                        iconData: Icons.edit,
+                        titleText: 'Edit',
+                        onTap: (){}),
+
+                    ListItems(
+                        iconData: Icons.delete,
+                        titleText: 'Delete',
+                        onTap: (){}),
+
+                  ],
+                ),
+
+              );
             },
         ),
       ),
